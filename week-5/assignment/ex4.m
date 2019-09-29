@@ -41,9 +41,9 @@ sel = sel(1:100);
 
 displayData(X(sel, :));
 
-fprintf('Program paused. Press enter to continue.\n');
-pause;
-
+% fprintf('Program paused. Press enter to continue.\n');
+% pause;
+input('Program paused. Press enter to continue.');
 
 %% ================ Part 2: Loading Parameters ================
 % In this part of the exercise, we load some pre-initialized 
@@ -80,8 +80,9 @@ J = nnCostFunction(nn_params, input_layer_size, hidden_layer_size, ...
 fprintf(['Cost at parameters (loaded from ex4weights): %f '...
          '\n(this value should be about 0.287629)\n'], J);
 
-fprintf('\nProgram paused. Press enter to continue.\n');
-pause;
+% fprintf('\nProgram paused. Press enter to continue.\n');
+% pause;
+input('Program paused. Press enter to continue.');
 
 %% =============== Part 4: Implement Regularization ===============
 %  Once your cost function implementation is correct, you should now
@@ -99,9 +100,9 @@ J = nnCostFunction(nn_params, input_layer_size, hidden_layer_size, ...
 fprintf(['Cost at parameters (loaded from ex4weights): %f '...
          '\n(this value should be about 0.383770)\n'], J);
 
-fprintf('Program paused. Press enter to continue.\n');
-pause;
-
+% fprintf('Program paused. Press enter to continue.\n');
+% pause;
+input('Program paused. Press enter to continue.');
 
 %% ================ Part 5: Sigmoid Gradient  ================
 %  Before you start implementing the neural network, you will first
@@ -116,9 +117,9 @@ fprintf('Sigmoid gradient evaluated at [-1 -0.5 0 0.5 1]:\n  ');
 fprintf('%f ', g);
 fprintf('\n\n');
 
-fprintf('Program paused. Press enter to continue.\n');
-pause;
-
+% fprintf('Program paused. Press enter to continue.\n');
+% pause;
+input('Program paused. Press enter to continue.');
 
 %% ================ Part 6: Initializing Pameters ================
 %  In this part of the exercise, you will be starting to implment a two
@@ -146,8 +147,9 @@ fprintf('\nChecking Backpropagation... \n');
 %  Check gradients by running checkNNGradients
 checkNNGradients;
 
-fprintf('\nProgram paused. Press enter to continue.\n');
-pause;
+% fprintf('\nProgram paused. Press enter to continue.\n');
+% pause;
+input('Program paused. Press enter to continue.');
 
 
 %% =============== Part 8: Implement Regularization ===============
@@ -168,9 +170,9 @@ debug_J  = nnCostFunction(nn_params, input_layer_size, ...
 fprintf(['\n\nCost at (fixed) debugging parameters (w/ lambda = %f): %f ' ...
          '\n(for lambda = 3, this value should be about 0.576051)\n\n'], lambda, debug_J);
 
-fprintf('Program paused. Press enter to continue.\n');
-pause;
-
+% fprintf('Program paused. Press enter to continue.\n');
+% pause;
+input('Program paused. Press enter to continue.');
 
 %% =================== Part 8: Training NN ===================
 %  You have now implemented all the code necessary to train a neural 
@@ -205,9 +207,9 @@ Theta1 = reshape(nn_params(1:hidden_layer_size * (input_layer_size + 1)), ...
 Theta2 = reshape(nn_params((1 + (hidden_layer_size * (input_layer_size + 1))):end), ...
                  num_labels, (hidden_layer_size + 1));
 
-fprintf('Program paused. Press enter to continue.\n');
-pause;
-
+% fprintf('Program paused. Press enter to continue.\n');
+% pause;
+input('Paused - press enter to continue');
 
 %% ================= Part 9: Visualize Weights =================
 %  You can now "visualize" what the neural network is learning by 
@@ -218,8 +220,9 @@ fprintf('\nVisualizing Neural Network... \n')
 
 displayData(Theta1(:, 2:end));
 
-fprintf('\nProgram paused. Press enter to continue.\n');
-pause;
+% fprintf('\nProgram paused. Press enter to continue.\n');
+% pause;
+input('Program paused. Press enter to continue.');
 
 %% ================= Part 10: Implement Predict =================
 %  After training the neural network, we would like to use it to predict
